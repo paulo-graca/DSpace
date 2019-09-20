@@ -171,7 +171,7 @@
 
     <util:map id="isJournalOfVolumeMap">
         <entry key="creativeworkseries.issn" value-ref="volumeJournal_issn"/>
-        <entry key="journal.title" value-ref="volumeJournal_title"/>
+        <entry key="dc.identifier.citation" value-ref="volumeJournal_title"/>
     </util:map>
     <bean class="org.dspace.content.virtual.Collected" id="volumeJournal_issn">
         <property name="fields">
@@ -204,7 +204,7 @@
 
     <util:map id="isJournalIssueOfPublicationMap">
         <entry key="creativeworkseries.issn"  value-ref="issueVolumeJournal_issn_related"/>
-        <entry key="journal.title"  value-ref="issueVolumeJournal_title_related"/>
+        <entry key="dc.identifier.citation"  value-ref="issueVolumeJournal_title_related"/>
         <entry key="journalvolume.identifier.name" value-ref="issueVolume_title_related"/>
         <entry key="relation.isJournalOfPublication" value-ref="issueVolumeJournal_uuid_related"/>
     </util:map>
